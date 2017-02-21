@@ -1,0 +1,205 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+td,th,tr,a{
+  font-family: 'Lato', sans-serif !important;
+  font-size: 16px !important;
+  text-align: center;
+  background: white;
+}
+
+.row{
+  margin: 0 !important;
+}
+
+.section-init{
+  width: 100%;
+  height: 400px;
+  background-image: url('../img/fondo.jpg');
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-gol{
+  box-shadow: 2px 2px 2px #ccc;
+}
+
+
+.title{
+  color: white;
+  font-size: 80px;
+  text-shadow: 2px 2px 2px black;
+  padding: 20px 40px;
+  background: linear-gradient(#0D47A1,black,#B71C1C);
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  font-family: 'Russo One', sans-serif;
+  font-style: oblique;
+}
+
+.sect-two{
+  width: 100%;
+  height: 270px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.sect-two::before{
+  content: "";
+  width: 100%;
+  height: 270px;
+  background-image: url('../img/atletic3.jpg');
+  background-size: 100% 100%;
+  opacity: .4;
+  position: absolute;
+  top: 0;
+}
+
+.btn{
+  position: relative;
+  background: black;
+  color: white;
+
+}
+
+
+
+.sect-btn{
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.sect-two a, .sect-btn a {
+  margin: auto 10px;
+
+}
+
+.sect-two a, .sect-btn a{
+ font-weight: bold;
+ font-size: 20px !important;
+}
+
+
+.sect-two a:hover, .sect-btn a:hover {
+ background: linear-gradient(100deg,#031538,white,#500811);
+ color: black;
+ font-weight: 900;
+}
+
+
+
+
+.section-gol{
+  width: 100%;
+  height: 200px;
+  background-image: url('../img/fondo.jpg');
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.sect-goleadores{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.sect-goleadores:before{
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background: url('../img/atletic2.jpg');
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  opacity: .8;
+}
+
+.table-gol{
+  margin: 40px;
+}
+
+
+.th-table{
+  background: linear-gradient(100deg,#031538,white,#500811)!important;
+  color: black;
+  font-size: 22px !important;
+}
+
+
+th{
+  text-align: center !important;
+}
+
+@media screen and (max-width:830px){
+  .title{
+    font-size: 40px;
+  }
+  .section-init{
+    height: 200px;
+  }
+
+  .sect-two{
+    height: 500px;
+  }
+
+  .sect-two::before{
+    content: "";
+    width: 100%;
+    height: 500px;
+    background-image: url('../img/atletic3.jpg');
+    background-size: 100% 100%;
+    opacity: .4;
+    position: absolute;
+    top: 0;
+  }
+
+  .table-gol{
+    margin: auto;
+  }
+
+
+}
+
+
+@media screen and (max-width:600px){
+  .title{
+    font-size: 20px;
+  }
+
+  .sect-goleadores{
+    padding: 0!important;
+  }
+
+  .sect-two{
+    flex-direction: column;
+    height: 435px;
+  }
+
+
+  .sect-two:before{
+    content: " ";
+    height: 435px;
+  }
+
+  .sect-two a{
+    margin: 10px;
+  }
+
+
+}
